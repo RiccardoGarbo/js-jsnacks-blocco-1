@@ -12,10 +12,18 @@
 
 
 // Chiedi all'utente quanti elementi inserire nell'array
-let numeroElementi = parseInt(prompt('Quanti elementi devo inserire ?'));
+const numberElements = parseInt(prompt('Quanti elementi devo inserire ?'));
 
 // Verifica se l'input è un numero valido
-if (isNaN(numeroElementi) || numeroElementi <= 0) {
+if (isNaN(numberElements) || numberElements <= 0) {
     console.log('Inserisci un numero valido.');
-
+} else {
+    // Creazione dell'array 
+    let randomNumber = [];
+    for (let i = 0; i < numberElements; i++) {
+        //Generazione dei numeri casuali
+        randomNumber.push = (Math.floor(Math.random() * 100) + 1);
+        console.log(randomNumber);
+    }
 }
+
